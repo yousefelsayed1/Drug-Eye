@@ -4,12 +4,14 @@ let productCategoryInput = document.getElementById("productCategory");
 let productExpInput = document.getElementById("productExp");
 let searchInputInput = document.getElementById("searchInput");
 let mainBtn = document.getElementById("main-btn");
+let emptyTable = document.getElementById("empty-table");
 let productContainer;
 let productIndex;
 
 /////local storage checking to display products
 if (localStorage.getItem("Productslist") == null) {
     productContainer = [];
+    emptyTable.innerHTML = "Enter your products now";
 } else {
     productContainer = JSON.parse(localStorage.getItem("Productslist"))
     displayProduct();
@@ -56,6 +58,7 @@ function displayProduct() {
     </tr>`
     }
     document.getElementById("tableBody").innerHTML = container;
+    emptyTable.innerHTML = "";
 
 }
 
