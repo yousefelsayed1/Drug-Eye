@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+.empty{
+    display: none;
+}
+body {
+    background-color: #bbc6fa;
+}
+
+label {
+    font-size: 20;
+    margin: 5px 0px;
+}
+
+.searchBar button {
+    margin-left: 20px;
+    height: 40px
+}
+
+.table,
+input,
+.searchBar button {
+    box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+#main-btn {
+    color: black;
+    display: inline;
+}
+
+.form-group span {
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    font-size: 14px;
+    color: red;
+}
+
+.form-group span i {
+    font-size: 14px;
+    color: green;
+}
+
+.submition span {
+    color: red;
+}
+
+.table {
+    width: 90%;
+    margin: auto;
+}
+
+.table th,
+.table td {
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+@media only screen and (min-width:400px)and (max-width:700px) {
+    .table th,
+    .table td {
+        font-size: 13px;
+    }
+    .phone {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .table th,
+    .table td {
+        font-size: 11px;
+    }
+    .phone {
+        display: none;
+    }
+}
